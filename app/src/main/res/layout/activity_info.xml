@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity"
+    android:padding="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#53ECB6">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="병 원 소 개"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:id="@+id/title_info"/>
+        <ImageView
+            android:layout_below="@+id/title_info"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="440dp"
+            android:src="@drawable/info1"
+            android:id="@+id/img_info"
+            android:scaleType="fitCenter"/>
+        <TextView
+            android:layout_below="@id/img_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="수술 전/후로 꼼꼼하고 지속적인 고한리를 위한 스마트케어시스템"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txt_info"
+            android:gravity="center"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="뒤로"
+            android:layout_below="@+id/txt_info"
+            android:id="@+id/btn_info_back"
+            android:backgroundTint="#BDBABA"
+            android:textColor="#111111"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
